@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="CustomControl.MainPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:customControl="clr-namespace:CustomControl"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+
+    <Grid RowDefinitions="100,*">
+        <Label Text="Test of Custom Control" />
+        <customControl:AnimatedSegmentedControl>
+            <customControl:AnimatedSegmentedControlItem Text="Item 1">
+                <Grid BackgroundColor="Red" />
+            </customControl:AnimatedSegmentedControlItem>
+            <customControl:AnimatedSegmentedControlItem Text="Item 2">
+                <Grid BackgroundColor="Blue" />
+            </customControl:AnimatedSegmentedControlItem>
+        </customControl:AnimatedSegmentedControl>
+    </Grid>
+
+</ContentPage>
